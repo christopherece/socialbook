@@ -1,63 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SocialBook — Facebook-Inspired Page</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #f0f2f5;
-      font-family: 'Roboto', sans-serif;
-    }
-    .navbar-brand span {
-      font-weight: 700;
-      color: #1877f2;
-    }
-    .post-profile, .sugg-pic {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      object-fit: cover;
-    }
-    .post-image {
-      width: 100%;
-      border-radius: 5px;
-      margin-top: 10px;
-    }
-    .post-actions span {
-      cursor: pointer;
-      margin-right: 10px;
-      color: #65676b;
-    }
-    .side-item {
-      padding: 10px;
-      display: flex;
-      align-items: center;
-      color: #333;
-    }
-    .side-item svg {
-      margin-right: 8px;
-    }
-  </style>
-</head>
-<body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
-        <circle cx="18" cy="18" r="18" fill="#fff"/>
-        <text x="9" y="26" font-size="18" fill="#1877f2" font-weight="bold">S</text>
-      </svg>
-      <span class="ms-2">SocialBook</span>
-    </a>
-    <div class="ms-auto d-flex align-items-center">
-      <img class="post-profile me-2" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
-      <span class="fw-bold">John Doe</span>
-    </div>
-  </nav>
-
+{% extends "base.html" %}
+{% block content %}
   <!-- Layout -->
   <div class="container mt-4">
     <div class="row">
@@ -152,5 +94,4 @@
       </div>
     </div>
   </div>
-</body>
-</html>
+{% endblock%}
