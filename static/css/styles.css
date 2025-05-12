@@ -1,0 +1,204 @@
+
+    body {
+      margin: 0;
+      font-family: 'Roboto', Arial, sans-serif;
+      background: #f0f2f5;
+      color: #050505;
+    }
+    .navbar {
+      background: #1877f2;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 24px;
+      height: 56px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+    .navbar .logo {
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.7rem;
+      letter-spacing: -1px;
+    }
+    .navbar .logo span {
+      margin-left: 8px;
+    }
+    .navbar .nav-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+    .nav-link {
+      color: #e4e6eb;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+    .nav-link:hover {
+      color: #fff;
+    }
+    .navbar .profile {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .profile-pic {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: #ddd;
+      border: 2px solid #fff;
+      object-fit: cover;
+    }
+    .layout {
+      display: flex;
+      max-width: 1250px;
+      margin: 32px auto 0 auto;
+      gap: 28px;
+      min-height: 80vh;
+      justify-content: space-between;
+      padding: 0 16px;
+    }
+    .sidebar {
+      width: 250px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .sidebar .side-item {
+      background: #fff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 10px 16px;
+      font-weight: 500;
+      color: #050505;
+      font-size: 1.04rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .sidebar .side-item:hover {
+      background: #f0f2f5;
+    }
+    .center-content {
+      flex: 2.3;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      min-width: 340px;
+      max-width: 600px;
+    }
+    .post {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 1px 2px rgba(60,60,60,0.03);
+      padding: 16px 20px 14px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+    .post-head {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .post-profile {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #e4e6eb;
+      object-fit: cover;
+    }
+    .post-author {
+      font-weight: 500;
+      font-size: 1rem;
+      margin-bottom: 2px;
+    }
+    .post-time {
+      color: #65676b;
+      font-size: 0.97rem;
+    }
+    .post-content {
+      color: #050505;
+      font-size: 1.09rem;
+      margin: 5px 0;
+    }
+    .post-image {
+      margin-top: 12px;
+      max-width: 100%;
+      border-radius: 6px;
+    }
+    .post-actions {
+      display: flex;
+      gap: 18px;
+      margin-top: 8px;
+      font-size: 0.98rem;
+      color: #65676b;
+    }
+    .post-actions span {
+      cursor: pointer;
+      transition: color 0.14s;
+    }
+    .post-actions span:hover {
+      color: #1877f2;
+    }
+    .rightbar {
+      width: 270px;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .rightbar .section {
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px 13px;
+      font-size: 1rem;
+    }
+    .rightbar .section h4 {
+      margin: 0 0 7px 0;
+      font-size: 1.06rem;
+      color: #65676b;
+    }
+    .rightbar .suggestion {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .rightbar .sugg-pic {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #e4e6eb;
+      object-fit: cover;
+    }
+    @media (max-width: 1100px) {
+      .sidebar, .rightbar {
+        display: none;
+      }
+      .center-content {
+        margin: 0 auto;
+        max-width: none;
+        min-width: 0;
+      }
+      .layout {
+        justify-content: center;
+        gap: 0;
+      }
+    }
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        height: unset;
+        padding: 10px;
+        gap: 8px;
+      }
+      .center-content {
+        padding: 0 2vw;
+      }
+    }

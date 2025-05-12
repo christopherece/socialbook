@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SocialBook — Facebook-Inspired Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f2f5;
+      font-family: 'Roboto', sans-serif;
+    }
+    .navbar-brand span {
+      font-weight: 700;
+      color: #1877f2;
+    }
+    .post-profile, .sugg-pic {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .post-image {
+      width: 100%;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .post-actions span {
+      cursor: pointer;
+      margin-right: 10px;
+      color: #65676b;
+    }
+    .side-item {
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      color: #333;
+    }
+    .side-item svg {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none">
+        <circle cx="18" cy="18" r="18" fill="#fff"/>
+        <text x="9" y="26" font-size="18" fill="#1877f2" font-weight="bold">S</text>
+      </svg>
+      <span class="ms-2">SocialBook</span>
+    </a>
+    <div class="ms-auto d-flex align-items-center">
+      <img class="post-profile me-2" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Profile">
+      <span class="fw-bold">John Doe</span>
+    </div>
+  </nav>
+
+  <!-- Layout -->
+  <div class="container mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 mb-3">
+        <div class="bg-white rounded shadow-sm">
+          <div class="side-item"><svg width="22" height="22" fill="#1877f2"><circle cx="11" cy="11" r="10" /></svg> Feed</div>
+          <div class="side-item"><svg width="22" height="22" fill="#42b72a"><rect width="16" height="16" x="3" y="3" rx="4" /></svg> Groups</div>
+          <div class="side-item"><svg width="22" height="22" fill="#f02849"><ellipse cx="11" cy="11" rx="9" ry="7"/></svg> Marketplace</div>
+          <div class="side-item"><svg width="22" height="22" fill="#1877f2"><path d="M6 16h10v2H6zm0-2h10v-6H6z"/></svg> Events</div>
+        </div>
+      </div>
+
+      <!-- Center Content -->
+      <div class="col-md-6">
+        <!-- Post 1 -->
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <img class="post-profile me-2" src="https://randomuser.me/api/portraits/women/58.jpg" alt="Anna Smith">
+              <div>
+                <div class="fw-bold">Anna Smith</div>
+                <small class="text-muted">2 hrs · Public</small>
+              </div>
+            </div>
+            <p>Enjoying a beautiful day at the park! 🌳☀️</p>
+            <img class="post-image" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=700&q=80" alt="Park">
+            <div class="post-actions mt-2">
+              <span>Like</span> · <span>Comment</span> · <span>Share</span>
+            </div>
+          </div>
+        </div>
+        <!-- Post 2 -->
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <img class="post-profile me-2" src="https://randomuser.me/api/portraits/men/52.jpg" alt="Mark Lee">
+              <div>
+                <div class="fw-bold">Mark Lee</div>
+                <small class="text-muted">30 mins · Friends</small>
+              </div>
+            </div>
+            <p>Just finished an awesome coding session! 💻🚀</p>
+            <img class="post-image" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&q=80" alt="Coding">
+            <div class="post-actions mt-2">
+              <span>Like</span> · <span>Comment</span> · <span>Share</span>
+            </div>
+          </div>
+        </div>
+        <!-- Post 3 -->
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <div class="d-flex align-items-center mb-2">
+              <img class="post-profile me-2" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Emily Clark">
+              <div>
+                <div class="fw-bold">Emily Clark</div>
+                <small class="text-muted">10 mins · Only me</small>
+              </div>
+            </div>
+            <p>Reading a new novel. Any book recommendations?</p>
+            <div class="post-actions mt-2">
+              <span>Like</span> · <span>Comment</span> · <span>Share</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Sidebar -->
+      <div class="col-md-3">
+        <div class="bg-white rounded shadow-sm p-3 mb-4">
+          <h5>People you may know</h5>
+          <div class="d-flex align-items-center mt-2">
+            <img class="sugg-pic me-2" src="https://randomuser.me/api/portraits/men/85.jpg" alt="Friend 1">
+            <span>Chris Bold</span>
+          </div>
+          <div class="d-flex align-items-center mt-2">
+            <img class="sugg-pic me-2" src="https://randomuser.me/api/portraits/women/61.jpg" alt="Friend 2">
+            <span>Maya Key</span>
+          </div>
+          <div class="d-flex align-items-center mt-2">
+            <img class="sugg-pic me-2" src="https://randomuser.me/api/portraits/men/33.jpg" alt="Friend 3">
+            <span>David Wu</span>
+          </div>
+        </div>
+        <div class="bg-white rounded shadow-sm p-3">
+          <h5>Sponsored</h5>
+          <div class="d-flex align-items-center mt-2">
+            <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=100&q=80" style="width:44px;height:36px;border-radius:5px;object-fit:cover" alt="Ad">
+            <div class="ms-2">Discover new adventures this summer!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
